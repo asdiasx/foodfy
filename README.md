@@ -4,4 +4,4 @@ This project is one of the challenges proposed during the LaunchBase Bootcamp fr
 
 Its a website for a foods receipt company named Foodfy.
 
-This project is under the MIT license. See the [LICENS](/LICENSE) para mais detalhes.
+This project is under the MIT license. See the [LICENSE](/LICENSE) para mais detalhes.
