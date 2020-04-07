@@ -47,7 +47,7 @@ li {
   font-weight: bold;
 }
 
-.link.ativo {
+.link.active {
   font-weight: bold;
 }
 
@@ -143,26 +143,26 @@ li {
   color: #999999;
 }
 
-.sobre {
+.about {
   display: flex;
   flex-direction: column;
   width: 940px;
   margin: 0 auto;
 }
 
-.sobre h1 {
+.about h1 {
   margin: 50px 0 20px;
   font-size: 24px;
   line-height: 28p;
 }
 
-.sobre p {
+.about p {
   margin: 0px 0 28px;
   font-size: 18px;
   line-height: 28p;
 }
 
-.sobre h2 {
+.about h2 {
   margin: 0 0 20px;
   font-size: 20px;
   line-height: 24p;
