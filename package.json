@@ -1,0 +1,26 @@
+{
+  "name": "projeto_foodfy",
+  "version": "1.0.0",
+  "description": "This project is one of the challenges proposed during the LaunchBase Bootcamp from RocketSeat.",
+  "main": "server.js",
+  "scripts": {
+    "start": "nodemon server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/asdiasx/foodfy.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/asdiasx/foodfy/issues"
+  },
+  "homepage": "https://github.com/asdiasx/foodfy#readme",
+  "dependencies": {
+    "express": "^4.17.1",
+    "nunjucks": "^3.2.1"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.2"
+  }
+}
