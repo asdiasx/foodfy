@@ -1,5 +1,7 @@
-Este projeto é um desafio do Bootcamp LaunchBase da RocketSeat.
+# Description
 
-Trata-se de em site para uma empresa de receitas chamada Foodfyyyytyuytyuyt
+This project is one of the challenges proposed during the LaunchBase Bootcamp from RocketSeat.
 
-Esse projeto está sob a licença MIT. Veja o arquivo [LICENSE](/LICENSE) para mais detalhes.
+Its a website for a foods receipt company named Foodfy.
+
+This project is under the MIT license. See the [LICENS](/LICENSE) para mais detalhes.
