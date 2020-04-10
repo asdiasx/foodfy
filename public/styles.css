@@ -1,4 +1,4 @@
-@import 'https://fonts.googleapis.com/css?family=Roboto:400,700&display=swap';
+@import "https://fonts.googleapis.com/css?family=Roboto:400,700&display=swap";
 
 * {
   margin: 0;
@@ -8,7 +8,7 @@
 
 html,
 body {
-  font-family: 'Roboto', sans-serif;
+  font-family: "Roboto", sans-serif;
   background-color: #ffffff;
   color: #111111;
   height: 100%;
@@ -111,6 +111,8 @@ li {
 .card img {
   border-radius: 15px;
   width: 300px;
+  height: 140px;
+  object-fit: cover;
   margin-bottom: 20px;
   cursor: pointer;
 }
@@ -167,65 +169,73 @@ li {
   font-size: 20px;
   line-height: 24p;
 }
-
-.modal-overlay {
-  position: fixed;
-  width: 100%;
-  height: 100%;
-  background-color: hsla(0, 0%, 0%, 0.6);
-  opacity: 0;
-  visibility: hidden;
+.recipe-image {
+  margin: 20px auto 0px;
 }
 
-.modal-overlay.active {
-  opacity: 1;
-  visibility: visible;
+.recipe-format {
+  width: 940px;
+  margin: 0 auto;
 }
 
-.modal {
-  background-color: whitesmoke;
-  border-radius: 16px;
-  width: 660px;
-  height: 413px;
-  position: fixed;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
+.recipe-image img {
+  border-radius: 15px;
+}
+
+.recipe-title h1 {
+  text-align: center;
+  margin-top: 50px;
+  font-size: 36px;
+  line-height: 42px;
+}
+
+.recipe-author {
+  margin-bottom: 10px;
+  font-size: 20px;
+  color: #777777;
+  line-height: 24px;
   text-align: center;
 }
-
-.close-modal {
-  font-size: 16px;
-  line-height: 19px;
-  color: #999999;
-  cursor: pointer;
-  position: absolute;
-  bottom: 30px;
-  left: 50%;
-  transform: translate(-50%, 0);
+.recipe-topic {
+  margin-top: 40px;
 }
 
-.close-modal:hover {
-  color: #111111;
+.topic-name {
+  font-size: 24px;
+  line-height: 28px;
   font-weight: bold;
 }
 
-.imgModal {
-  width: 600px;
-  height: 200px;
-  border-radius: 15px;
-  margin: 30px 30px 20px;
+.topic-button {
+  font-size: 12px;
+  line-height: 14px;
+  color: #999999;
+  cursor: pointer;
 }
 
-.plateModal {
-  font-weight: normal;
-  font-size: 24px;
-  line-height: 28px;
-  margin-bottom: 5px;
+.topic-button:hover {
+  font-weight: bold;
+  color: #111111;
 }
 
-.authorModal {
+.recipe-list {
+  margin-top: 20px;
+}
+
+.recipe-list li {
   font-size: 18px;
-  line-height: 21px;
-  color: #777777;
+  color: #444444;
+  line-height: 28px;
+  list-style: inside;
+}
+
+.information {
+  margin: 20px 0px 50px;
+  font-size: 18px;
+  color: #444444;
+  line-height: 28px;
+}
+
+.topic-hide.active {
+  display: none;
 }

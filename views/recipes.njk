@@ -2,81 +2,14 @@
 
 {% block content %}
     <div class="cards">
-        <div class="card">
-            <img src="/burger.png" alt="" class="plate" />
-            <p class="plate-name">Triplo bacon burger</p>
-            <p class="plate-author">por Jorge Relato</p>
-        </div>
-        <div class="card">
-            <img src="/pizza.png" alt="" class="plate" />
-            <p class="plate-name">Pizza 4 estações</p>
-            <p class="plate-author">por Fabiana Melo</p>
-        </div>
-        <div class="card">
-            <img src="/espaguete.png" alt="" class="plate" />
-            <p class="plate-name">Espaguete ao alho</p>
-            <p class="plate-author">por Júlia Kinoto</p>
-        </div>
-        <div class="card">
-            <img src="/lasanha.png" alt="" class="plate" />
-            <p class="plate-name">Lasanha mac n’ cheese</p>
-            <p class="plate-author">por Juliano Vieira</p>
-        </div>
-        <div class="card">
-            <img src="/doce.png" alt="" class="plate" />
-            <p class="plate-name">Docinhos pão-do-céu</p>
-            <p class="plate-author">por Ricardo Golvea</p>
-        </div>
-        <div class="card">
-            <img src="/asinhas.png" alt="" class="plate" />
-            <p class="plate-name">Asinhas de frango ao barbecue</p>
-            <p class="plate-author">por Vania Steroski</p>
-        </div>
-        <div class="card">
-            <img src="/burger.png" alt="" class="plate" />
-            <p class="plate-name">Triplo bacon burger</p>
-            <p class="plate-author">por Jorge Relato</p>
-        </div>
-        <div class="card">
-            <img src="/pizza.png" alt="" class="plate" />
-            <p class="plate-name">Pizza 4 estações</p>
-            <p class="plate-author">por Fabiana Melo</p>
-        </div>
-        <div class="card">
-            <img src="/espaguete.png" alt="" class="plate" />
-            <p class="plate-name">Espaguete ao alho</p>
-            <p class="plate-author">por Júlia Kinoto</p>
-        </div>
-        <div class="card">
-            <img src="/lasanha.png" alt="" class="plate" />
-            <p class="plate-name">Lasanha mac n’ cheese</p>
-            <p class="plate-author">por Juliano Vieira</p>
-        </div>
-        <div class="card">
-            <img src="/doce.png" alt="" class="plate" />
-            <p class="plate-name">Docinhos pão-do-céu</p>
-            <p class="plate-author">por Ricardo Golvea</p>
-        </div>
-        <div class="card">
-            <img src="/asinhas.png" alt="" class="plate" />
-            <p class="plate-name">Asinhas de frango ao barbecue</p>
-            <p class="plate-author">por Vania Steroski</p>
-        </div>
+        {% for recipe in recipes %}
+            <div class="card">
+                <img src="{{ recipe.image }}" alt="" class="plate"/>
+                <p class="plate-name">{{ recipe.title }}</p>
+                <p class="plate-author">{{ recipe.author }}</p>
+            </div>
+        {% endfor %}
     </div>
-    </section>
-    <div class="modal-overlay">
+</section>
 
-        <div class="modal">
-
-            <div class="close-modal">
-                <p>Fechar</p>
-            </div>
-
-            <div class="modal-content">
-                <img class="imgModal" src="" alt="" srcset="">
-                <h2 class="plateModal"></h2>
-                <p class="authorModal"></p>
-            </div>
-
-        </div>
 {% endblock %}

@@ -2,61 +2,26 @@
 
 {% block content %}
 
-    <div class="intro-box">
-      <h1>As melhores receitas</h1>
-      <p>
-        Aprenda a construir os melhores pratos com receitas criadas por profissionais do mundo inteiro.
-      </p>
-      <img src="/chef.png" alt="chef-image" class="chef-image"/>
+  <div class="intro-box">
+    <h1>As melhores receitas</h1>
+    <p>
+      Aprenda a construir os melhores pratos com receitas criadas por profissionais do mundo inteiro.
+    </p>
+    <img src="/chef.png" alt="chef-image" class="chef-image"/>
+  </div>
+  <section class="top-access">
+    <div class="wrapper">
+      <h2>Mais acessadas</h2>
     </div>
-    <section class="top-access">
-      <div class="wrapper">
-        <h2>Mais acessadas</h2>
-      </div>
-      <div class="cards">
+    <div class="cards">
+      {% for recipe in recipes.slice(6) %}
         <div class="card">
-          <img src="/burger.png" alt="" class="plate"/>
-          <p class="plate-name">Triplo bacon burger</p>
-          <p class="plate-author">por Jorge Relato</p>
+          <img src="{{recipe.image}}" alt="" class="plate"/>
+          <p class="plate-name">{{ recipe.title }}</p>
+          <p class="plate-author">{{ recipe.author }}</p>
         </div>
-        <div class="card">
-          <img src="/pizza.png" alt="" class="plate"/>
-          <p class="plate-name">Pizza 4 estações</p>
-          <p class="plate-author">por Fabiana Melo</p>
-        </div>
-        <div class="card">
-          <img src="/espaguete.png" alt="" class="plate"/>
-          <p class="plate-name">Espaguete ao alho</p>
-          <p class="plate-author">por Júlia Kinoto</p>
-        </div>
-        <div class="card">
-          <img src="/lasanha.png" alt="" class="plate"/>
-          <p class="plate-name">Lasanha mac n’ cheese</p>
-          <p class="plate-author">por Juliano Vieira</p>
-        </div>
-        <div class="card">
-          <img src="/doce.png" alt="" class="plate"/>
-          <p class="plate-name">Docinhos pão-do-céu</p>
-          <p class="plate-author">por Ricardo Golvea</p>
-        </div>
-        <div class="card">
-          <img src="/asinhas.png" alt="" class="plate"/>
-          <p class="plate-name">Asinhas de frango ao barbecue</p>
-          <p class="plate-author">por Vania Steroski</p>
-        </div>
-      </div>
-    </section>
-    <div class="modal-overlay">
-      <div class="modal">
-        <div class="close-modal">
-          <p>Fechar</p>
-        </div>
+      {% endfor %}
+    </div>
+  </section>
 
-        <div class="modal-content">
-          <img class="imgModal" src="" alt="" srcset=""/>
-          <h2 class="plateModal"></h2>
-          <p class="authorModal"></p>
-        </div>
-      </div>
-    </div>
 {% endblock %}
